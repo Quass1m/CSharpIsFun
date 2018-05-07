@@ -1,4 +1,5 @@
 ﻿using System;
+using CSharpIsFun.Runners;
 
 namespace CSharpIsFun
 {
@@ -7,6 +8,9 @@ namespace CSharpIsFun
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            RunStringComparison.Run();
+
+            Console.ReadKey();
         }
     }
 }
