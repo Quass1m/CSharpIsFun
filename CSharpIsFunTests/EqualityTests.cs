@@ -39,5 +39,17 @@ namespace CSharpIsFunTests
             (o1 == o1prim).Should().BeTrue();
             (o2 == o2prim).Should().BeTrue();
         }
+
+        [Fact]
+        public void Test2()
+        {
+            int int1 = 3;
+            // value type boxing occurs
+            ReferenceEquals(int1, int1).Should().BeFalse();
+            int1.GetType().IsValueType.Should().BeTrue();
+
+            int1.Equals(int1).Should().BeTrue();
+            int1.Equals(1).Should().BeFalse();
+        }
     }
 }
