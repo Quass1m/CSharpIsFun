@@ -18,6 +18,14 @@ namespace LangFeatures73
         {
             x++;
             //y--; // not permitted due to 'in' keyword
+            //y++; // not permitted due to 'in' keyword
+
+            return x;
+        }
+
+        static int OrMaybeInWorking(this ref int x, in int y)
+        {
+            x = y;
 
             return x;
         }
@@ -56,7 +64,10 @@ namespace LangFeatures73
             }
 
             WriteLine($"a = {a}, b = {b}, c = {c}, d = {d}, e = {e}, f = {f}");
-            
+
+            int g = a.OrMaybeInWorking(in b);
+            WriteLine($"g = {g}, b = {b}");
+
             ReadKey();
         }
     }

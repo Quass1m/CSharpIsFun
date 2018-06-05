@@ -24,9 +24,6 @@
   <ItemGroup>
     <ProjectReference Include="..\AsyncMain\AsyncMain.csproj" />
     <ProjectReference Include="..\CSharpIsFun\CSharpIsFun.csproj" />
-    <ProjectReference Include="..\LangFeatures70\LangFeatures70.csproj" />
-    <ProjectReference Include="..\LangFeatures71\LangFeatures71.csproj" />
-    <ProjectReference Include="..\LangFeatures72\LangFeatures72.csproj" />
     <ProjectReference Include="..\LangFeatures73\LangFeatures73.csproj" />
   </ItemGroup>
 
