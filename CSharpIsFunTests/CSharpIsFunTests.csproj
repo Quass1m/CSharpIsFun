@@ -10,6 +10,11 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="AutoFixture" Version="4.3.0" />
     <PackageReference Include="AutoFixture.SeedExtensions" Version="4.3.0" />
@@ -24,7 +29,6 @@
   <ItemGroup>
     <ProjectReference Include="..\AsyncMain\AsyncMain.csproj" />
     <ProjectReference Include="..\CSharpIsFun\CSharpIsFun.csproj" />
-    <ProjectReference Include="..\LangFeatures73\LangFeatures73.csproj" />
   </ItemGroup>
 
 </Project>

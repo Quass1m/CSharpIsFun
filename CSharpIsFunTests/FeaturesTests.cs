@@ -72,9 +72,38 @@ namespace CSharpIsFunTests
 
         }
 
+        // ToDo: improve this test
         [Fact]
-        public void Test()
+        public void TestReferenceSemantics()
         {
+            int a = 1;
+            int b = 10;
+            int c = a.OrMaybe(ref b);
+            int d = a.OrMaybeIn(in b);
+            int e = a.OrMaybeIn(20);
+            ref int f = ref a.OrMaybeRef(100);
+
+            //WriteLine($"a = {a}, b = {b}, c = {c}, d = {d}, e = {e}, f = {f}");
+
+            unsafe
+            {
+                int* pa = &a;
+                *pa = 0xfaaa;
+                int* pb = &b;
+                *pb = 0xfbbb;
+                int* pc = &c;
+                *pc = 0xfccc;
+                int* pd = &d;
+                *pd = 0xfddd;
+                int* pe = &e;
+                *pe = 0xfeee;
+                //WriteLine($"a = {*pa}, b = {*pb}, c = {*pc}, d = {*pd}, e = {*pe}, f = {f}");
+            }
+
+            //WriteLine($"a = {a}, b = {b}, c = {c}, d = {d}, e = {e}, f = {f}");
+
+            int g = a.OrMaybeInWorking(in b);
+            //WriteLine($"g = {g}, b = {b}");
         }
     }
 }

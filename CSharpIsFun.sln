@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpIsFunTests", "CSharpI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncMain", "AsyncMain\AsyncMain.csproj", "{5AD32F0D-2440-42CA-87A5-135CF5E8E336}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LangFeatures73", "LangFeatures73\LangFeatures73.csproj", "{215C0359-EBF1-4885-902C-808B8285A8A5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{5AD32F0D-2440-42CA-87A5-135CF5E8E336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD32F0D-2440-42CA-87A5-135CF5E8E336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AD32F0D-2440-42CA-87A5-135CF5E8E336}.Release|Any CPU.Build.0 = Release|Any CPU
-		{215C0359-EBF1-4885-902C-808B8285A8A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{215C0359-EBF1-4885-902C-808B8285A8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{215C0359-EBF1-4885-902C-808B8285A8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{215C0359-EBF1-4885-902C-808B8285A8A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
