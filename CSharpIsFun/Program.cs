@@ -7,8 +7,15 @@ namespace CSharpIsFun
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            RunStringComparison.Run();
+            Console.WriteLine("CSharpIsFun");
+
+            //RunStringComparison.Run();
+
+            Features.SpanType.TestSpan();
+            Features.SpanType.TestReadOnlySpan();
+            Features.SpanType.TestSpanStackAlloc();
+
+
 
             Console.ReadKey();
         }
