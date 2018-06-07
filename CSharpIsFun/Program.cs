@@ -1,4 +1,6 @@
 ﻿using System;
+using CSharpIsFun.Helpers;
+using CSharpIsFun.Features;
 using CSharpIsFun.Runners;
 
 namespace CSharpIsFun
@@ -11,9 +13,9 @@ namespace CSharpIsFun
 
             //RunStringComparison.Run();
 
-            Features.SpanType.TestSpan();
-            Features.SpanType.TestReadOnlySpan();
-            Features.SpanType.TestSpanStackAlloc();
+            SpanType.TestSpan();
+            SpanType.TestReadOnlySpan();
+            SpanType.TestSpanStackAlloc();
 
 
 
