@@ -105,5 +105,13 @@ namespace CSharpIsFunTests
             int g = a.OrMaybeInWorking(in b);
             //WriteLine($"g = {g}, b = {b}");
         }
+
+        [Fact]
+        public void TestReadonlyRef()
+        {
+            int a = 5;
+            ref readonly int b = ref a.ReadonlyRef(10);
+            //b = 20;
+        }
     }
 }
