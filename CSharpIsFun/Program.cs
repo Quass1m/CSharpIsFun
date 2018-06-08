@@ -2,10 +2,11 @@
 using CSharpIsFun.Helpers;
 using CSharpIsFun.Features;
 using CSharpIsFun.Runners;
+using System.IO;
 
 namespace CSharpIsFun
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
@@ -13,11 +14,10 @@ namespace CSharpIsFun
 
             //RunStringComparison.Run();
 
-            SpanType.TestSpan();
-            SpanType.TestReadOnlySpan();
-            SpanType.TestSpanStackAlloc();
-
-
+            //SpanType.TestSpan();
+            //SpanType.TestReadOnlySpan();
+            //SpanType.TestSpanStackAlloc();
+            Console.WriteLine(SpanType.TestMemoryType());
 
             Console.ReadKey();
         }
