@@ -55,6 +55,34 @@ namespace CSharpIsFunTests
         }
 
         [Fact]
+        public void TupleComparisonTest()
+        {
+            // Does not work with '==' and '!=' operators
+            //var t1 = new Tuple<string, int>("Mike", 45);
+            //var t2 = new Tuple<string, int>("John", 33);
+            //var t3 = new Tuple<string, int>("Mike", 45);
+
+            var t1 = (name: "Mike", age: 45);
+            var t2 = (name: "John", age: 33);
+            var t3 = (name: "Mike", age: 45);
+
+            t1.Equals(t2).Should().BeFalse();
+            t1.Equals(t3).Should().BeTrue();
+
+            var res1 = t1 == t2;
+            res1.Should().BeFalse();
+
+            var res2 = t1 == t3;
+            res2.Should().BeTrue();
+
+            var res3 = t1 != t2;
+            res3.Should().BeTrue();
+
+            var res4 = t1 != t3;
+            res4.Should().BeFalse();
+        }
+
+        [Fact]
         public void DiscardsTest()
         {
             int max = Discards.DiscardFromMaxMinRange(new[] { 5, 3, 3, 8, 1, 45, 22 });
@@ -112,6 +140,27 @@ namespace CSharpIsFunTests
             int a = 5;
             ref readonly int b = ref a.ReadonlyRef(10);
             //b = 20;
+        }
+
+        [Fact]
+        public void CurryingTest()
+        {
+            var selfEmployed = new Employee()
+            {
+                Id = 1,
+                Salary = 29000,
+                IsSelfEmployed = true
+            };
+
+            var normalEmployee = new Employee()
+            {
+                Id = 2,
+                Salary = 35000,
+                IsSelfEmployed = false
+            };
+
+            Currying.GetTaxForEmployee(selfEmployed).Should().Be(5510);
+            Currying.GetTaxForEmployee(normalEmployee).Should().Be(11200);
         }
     }
 }
