@@ -40,5 +40,20 @@ namespace CSharpIsFun.Helpers
         {
             return items => items.Aggregate(reducer);
         }
+
+        /// <summary>
+        /// Alternative to MoreLinq's 'ForEach'
+        /// </summary>
+        public static void DoAction<TSource>(this IEnumerable<TSource> collection, Action<TSource> action)
+        {
+            foreach (var item in collection)
+               action(item);
+        }
+
+        public static IEnumerable<TResult> DoFunc<TSource, TResult>(this IEnumerable<TSource> collection, Func<TSource, TResult> func)
+        {
+            foreach (var item in collection)
+                yield return func(item);
+        }
     }
 }
