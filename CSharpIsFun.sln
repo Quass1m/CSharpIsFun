@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpIsFunTests", "CSharpI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncMain", "AsyncMain\AsyncMain.csproj", "{5AD32F0D-2440-42CA-87A5-135CF5E8E336}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIsFun.Database", "CSharpIsFun.Database\CSharpIsFun.Database.csproj", "{035AACE5-26F0-448B-8995-F759E174B115}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpIsFun.Database", "CSharpIsFun.Database\CSharpIsFun.Database.csproj", "{035AACE5-26F0-448B-8995-F759E174B115}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIsFun.MigrateDatabase", "CSharpIsFun.MigrateDatabase\CSharpIsFun.MigrateDatabase.csproj", "{8CB54B0C-2CC5-419B-8732-310B962375EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpIsFun.MigrateDatabase", "CSharpIsFun.MigrateDatabase\CSharpIsFun.MigrateDatabase.csproj", "{8CB54B0C-2CC5-419B-8732-310B962375EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIsFun.Web", "CSharpIsFun.Web\CSharpIsFun.Web.csproj", "{3674FA33-CC2A-4D5B-958E-6CBDB0BAD83F}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{539C514D-565D-43B8-9F94-EEFDF370E280}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{8CB54B0C-2CC5-419B-8732-310B962375EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CB54B0C-2CC5-419B-8732-310B962375EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CB54B0C-2CC5-419B-8732-310B962375EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3674FA33-CC2A-4D5B-958E-6CBDB0BAD83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3674FA33-CC2A-4D5B-958E-6CBDB0BAD83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3674FA33-CC2A-4D5B-958E-6CBDB0BAD83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3674FA33-CC2A-4D5B-958E-6CBDB0BAD83F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{539C514D-565D-43B8-9F94-EEFDF370E280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{539C514D-565D-43B8-9F94-EEFDF370E280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{539C514D-565D-43B8-9F94-EEFDF370E280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{539C514D-565D-43B8-9F94-EEFDF370E280}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

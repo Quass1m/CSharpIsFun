@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  csharpisfun.web:
+    image: ${DOCKER_REGISTRY}csharpisfunweb
+    build:
+      context: .
+      dockerfile: CSharpIsFun.Web/Dockerfile
